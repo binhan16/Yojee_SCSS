@@ -1,0 +1,188 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  .navbar {
+    background-color: $white;
+    height: 80px;
+    .navbar-logo img {
+      max-width: 150px;
+      height: auto;
+      margin-left: 40px;
+    }
+    
+    .navbar-nav {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      .nav-item {
+        align-items: center;
+        color: $tag-a;
+        height: 80px;
+        border-bottom: 2px solid transparent;
+        a:hover {
+          color: $pink;
+          border-bottom: 2px solid $pink;
+        }
+        .nav-link {
+          color: $tag-a;
+          align-items: center;
+          text-decoration: none;
+          padding: 0.5rem 1rem;
+          height: 100%;
+          line-height: 80px;
+          font-size: 18px;
+          i.fas{
+            display: none;
+          }
+        }
+        ul.dropdown_menu {
+          display: none;
+          position: absolute;
+          top: 70px;
+          left: 25%;
+          height: 300px;
+          margin-left: 220px;
+          box-shadow: 0px 3px 6px #00000029;
+          padding: 30px 50px 100px;
+          background: $white
+            linear-gradient(
+              114deg,
+              rgba(46, 49, 145, 0.05) 0%,
+              rgba(81, 44, 151, 0.05) 28%,
+              rgba(172, 34, 168, 0.05) 91%,
+              rgba(187, 33, 171, 0.05) 100%
+            )
+            0% 0% no-repeat padding-box;
+          left: 0;
+          z-index: 9;
+          border-radius: 0px;
+          li {
+            position: relative;
+            max-width: max-content;
+            justify-content: space-between;
+            a {
+              float: left;
+              color: $tag-a;
+              margin-bottom: 20px;
+              margin-right: 20px;
+              text-decoration: none;
+              justify-content: space-between;
+              i {
+                font-size: 10px;
+              }
+              &:hover {
+                font-weight: $fw6;
+                color: $pink;
+                border-bottom: none;
+              }
+            }
+            
+          }
+          li>ul.submenu {
+            // padding-top: -40px;
+            width: 507px;
+            height: 300px;
+            position: absolute;
+            overflow: hidden;
+            top: -102px;
+            left: 200px;
+            padding: 45px 0 50px 50px;
+            background: #fff;
+            margin: 0;
+            border-radius: 0;
+          }
+        }
+        &:hover > ul.dropdown_menu {
+          z-index: 100;
+          display: block;
+        }
+      }
+    }
+
+  }
+
+  @media screen and (max-width:768px) {
+    box-shadow: 0 1px 4px $myBtn;
+    // padding: 0 10px;
+    // height:80px;
+      width:100%;
+    .navbar{
+      height:100%;
+      padding: 0;
+      .navbar-logo img{
+        max-width:100px; 
+      }
+      // Delete border toggle
+      .navbar-toggler{
+        margin-right: 30px;
+        &:focus,
+        &:active,.navbar-toggler-icon:focus{
+          outline: none;
+          box-shadow: none;
+        }
+      }
+
+      .navbar-nav{
+        z-index:1;
+        background-color: $white;
+        
+        .nav-item{
+          .nav-link{
+            font-weight: $fw6;
+            border-bottom: 1px solid rgb(131, 130, 130);
+            
+            &:hover{
+              border-bottom: 1px solid rgb(131, 130, 130);
+            }
+          }
+        }
+      }
+      #primary-menu{
+        width: 100%;
+        // margin-top: 50px;
+        .nav-item{
+        
+          .nav-link{
+            width:400px;
+            // float: left;
+            justify-content:space-between;
+            span{
+        
+              float:left;
+              
+            }
+            i.fas{
+              display: block;
+              margin:30px 0 ;
+              float:right;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+      #right-menu{
+        flex-direction: column-reverse;
+        background-color: $tag-a;
+        margin-top: 140px;
+        display: flex;
+        .nav-item{
+          display: flex;
+          .nav-link{
+            color:$white;
+            border-bottom: none;
+            &:hover{
+              color: $pink;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

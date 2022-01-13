@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Yojee Web</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./scss/style.css" />
+    <style>
+        /* backToTop */
+        #myBtn {
+            display: block;
+            position: fixed;
+            bottom: 60px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: rgb(204, 199, 199);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- backtoTop -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </button>
+
+    <!-- Header Start -->
+    <header>
+        <nav class="navbar navbar-expand-md text-dark ">
+            <!-- Brand -->
+            <a class="navbar-logo" href="#"><img src="./image/Logo.png" alt="Logo" /></a>
+
+            <!-- Toggle -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"
+                    style="background-image: url('./image/1024px-Hamburger_icon.svg.webp');"></span>
+            </button>
+
+            <!-- Navbar -->
+            <div class="collapse navbar-collapse justify-content-around" id="collapsibleNavbar">
+                <ul id="primary-menu" class="navbar-nav d-flex list-unstyled">
+                    <li class="nav-item ours">
+                        <a href="#" class="nav-link ours">
+                            <span>Our Software</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+
+                        <!-- sub-menu -->
+                        <ul class="dropdown_menu list-unstyled ">
+                            <li>
+                                <a href="#">Solving Challenges
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <ul class=" submenu">
+                                    <a href="#">View all
+                                        <i class="fas fa-angle-double-right"></i>
+                                        <br>
+                                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit</span>
+                                    </a>
+                                    <li>
+                                        <a href="#">Order Management</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Delivery Route Planning</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Delivery Route Optimization</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Fleet Delivery Tracking</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Automated Customer Update</a>
+                                    </li>
+                                </ul>
+
+                                <a href="#">Features
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#">API</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span>Industry</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span>Resources</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <span>About</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul id="right-menu" class=" navbar-nav  d-flex list-unstyled">
+                    <div class="d-flex">
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class="nav-link">Send SG</a>
+                        </li>
+                    </div>
+                    <button class="btn-pink">DEMO</button>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- See World Flow Start -->
+    <section class="swf container">
+        <div class="row">
+            <div class="col-12 col-sm-8 content ">
+                <div class="text">
+                    <h1 class="font-weight-bold">See the world flow</h1>
+                    <p class="font-weight-bold">
+                        Gain full visibility on your logistics operations, manage your
+                        partners
+                        and scale your business
+                    </p>
+                </div>
+                <div class="solutions">
+                    <p class="title">Chose your solutions:</p>
+                    <ul class="choose d-flex list-unstyled">
+                        <div class="row">
+                            <li class="nav-item col-12 col-sm-4 ">
+                                <button class="btn-chose btn-1">
+                                    <span>ALL-IN-ONE SAAS PLATFORM</span>
+                                </button>
+                            </li>
+                            <li class="nav-item col-12 col-sm-4">
+                                <button class="btn-chose btn-2">
+                                    <span>REDUCE COST</span>
+                                </button>
+                            </li>
+                            <li class="nav-item col-12 col-sm-4">
+                                <button class="btn-chose btn-1">
+                                    <span>IMPROVE VISIBILITY</span>
+                                </button>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="image col-12 col-sm-4">
+                <img src="./image/Business logistics.png" alt="Business" />
+            </div>
+        </div>
+    </section>
+    <!-- See World Flow End -->
+
+    <!-- Featured Start -->
+    <section class="featured container">
+        <p>Featured In</p>
+
+        <div class="items row">
+            <a href="#" class="item col-2 col-sm-2">
+                <img src="./image/img1.png" />
+            </a>
+            <a class="item col-2 col-sm-2" href="#">
+                <img src="./image/img2.png" />
+            </a>
+            <a class="item col-2 col-sm-2" href="#">
+                <img src="./image/img3.png" />
+            </a>
+            <a class="item col-2 col-sm-2" href="#">
+                <img src="./image/img4.png" />
+            </a>
+            <a class="item col-2 col-sm-2" href="#">
+                <img src="./image/img5.png" />
+            </a>
+        </div>
+    </section>
+    <!-- Featured End -->
+
+    <!-- Chart Start -->
+    <section class="chart">
+        <h1 class="heading">
+            Automate your operations with delivery management software
+        </h1>
+        <div class="container">
+            <div class="row">
+                <div class="left-chart col-sm-7 col-12">
+                    <img src="./image/chart.png" alt="chart">
+                    <br>
+                    <p>Get real-time ETA based on the drivers location while keeping your customers informed and
+                        dramatically reduces customer </p>
+                </div>
+                <div class="right-chart col-sm-5 col-12">
+                    <div class="item">
+                        <div class="text">
+                            <div class="icon-chart">
+                                <img src="./image/Group 510.png">
+                            </div>
+                            <div class="content">
+                                <p>Route Planning and Route Optimisation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="text">
+                            <div class="icon-chart">
+                                <img src="./image/Path 3968.png">
+                            </div>
+                            <div class="content">
+                                <p>Live Tracking</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="text">
+                            <div class="icon-chart pr-3 ">
+                                <img src="./image/Group 509.png">
+                            </div>
+                            <div class="content">
+                                <p>Driver App</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="text">
+                            <div class="icon-chart">
+                                <img src="./image/Group 514.png">
+                            </div>
+                            <div class="content">
+                                <p>Manage your partners/vendors</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="text">
+                            <div class="icon-chart">
+                                <img src="./image/Consulting.png">
+                            </div>
+                            <div class="content">
+                                <p>Easy-to-use API</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="text">
+                            <div class="icon-chart">
+                                <img src="./image/Movies.png">
+                            </div>
+                            <div class="content">
+                                <p>Analytics and Reporting</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <br />
+        <button class="btn-find d-none">FIND OUT MORE</button>
+    </section>
+    <!-- Chart End -->
+
+    <!-- DoMoreWith Start -->
+    <section class="do-more-with">
+        <div class="top-background"></div>
+
+        <div class="doMoreWith">
+            <h1>Do more with Yojee</h1>
+            <p class="title">An enterprise-grade solution for companies of any size</p>
+            <div class="container">
+                <div class="row">
+                    <ul class="amount row text-align-center list-unstyled">
+                        <li class="col-12 col-sm-4 p-5 mt-1">
+                            <p class="btn">4 <br> out of 10</p>
+                            <p>Top logistics providers <br> powered by Yojee <br> technolog</p>
+                        </li>
+                        <li class="col-12 col-sm-4 p-5">
+                            <p class="btn">100+</p>
+                            <p>Truck companies leveraging <br> the platform</p>
+                        </li>
+                        <li class="col-12 col-sm-4 p-5">
+                            <p class="btn">4,000,000+</p>
+                            <p>Deliveries Processed</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-background"></div>
+    </section>
+    <!-- DoMoreWith End -->
+
+    <!-- Form Start -->
+    <section class="form">
+        <div class="form-register">
+            <h1 class="heading">Ready For The Free Trial</h1>
+            <p class="decript">See for yourself just how much money and time Yojee will save you and your team</p>
+            <div class="container mt-2">
+                <div class="row" style="justify-content: space-evenly;">
+                    <div class="image-left col-12 col-sm-4 ">
+                        <img src="./image/Freight quote request.png">
+                    </div>
+                    <div class="form-input col-12 col-sm-4">
+                        <form>
+
+                            <div class="form-section">
+                                <p>First Name</p>
+                                <input type="text" style="border: 2px solid #555;" id="fname" name="firstname"
+                                    placeholder="Your name..">
+                                <br>
+                                <small></small>
+                                <span></span>
+                            </div>
+
+                            <div class="form-section">
+                                <p>Last Name</p>
+                                <input type="text" style="border: 2px solid #555;" id="lname" name="lastname"
+                                    placeholder="Your last name..">
+                                <br>
+                                <small></small>
+                                <span></span>
+                            </div>
+
+                            <div class="form-section">
+                                <p>Contact Number</p>
+                                <input type="number" style="border: 2px solid #555;" id="cnumber" name="contactnumber"
+                                    placeholder="Your contact number..">
+                                <br>
+                                <small></small>
+                                <span></span>
+                            </div>
+
+                            <div class="form-section">
+                                <p>Company</p>
+                                <input type="text" style="border: 2px solid #555;" id="company" name="company"
+                                    placeholder="Your company..">
+                                <br>
+                                <small></small>
+                                <span></span>
+                            </div>
+
+                            <div class="form-section">
+                                <p>Email</p>
+                                <input type="email" style="border: 2px solid #555;" id="email" name="email"
+                                    placeholder="Your email..">
+                                <br>
+                                <small></small>
+                                <span></span>
+                            </div>
+
+                            <div class="form-section">
+                                <p for="country">Country</p>
+                                <select style="border: 2px solid #555;" id="country" name="country">
+                                    <option value="australia">Australia</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="usa">USA</option>
+                                </select>
+                            </div>
+
+
+                            <div class="g-recaptcha" data-sitekey="6LfTZQkeAAAAACCB-mQ7_k7etFsgX95O2RYghmX3"></div>
+                            <button type="submit" class="btn-pink" style="width:300px;outline: none;">BOOK
+                                DEMO</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Form End -->
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="footer-links ">
+            <div class="row">
+                <div class="image col-12 col-sm-3 mt-5 ">
+                    <a href="#">
+                        <image src="./image/Logo.png" />
+                    </a>
+                </div>
+                <div class="col-12 col-sm-3  pb-5 mt-5">
+                    <h3>Our Software</h3>
+                    <ul class="list-unstyled">
+                        <li class="contact"> Solving Challenges Ave</li>
+                        <li class="contact"> Features</li>
+                        <li class="contact"> Pricing</li>
+                        <li class="contact"> API</li>
+
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-2  pb-5 mt-5">
+                    <h3>Industry</h3>
+                    <ul class="list-unstyled">
+                        <li class="contact"> Retail</li>
+                        <li class="contact"> Logistics</li>
+                        <li class="contact"> Food</li>
+                        <li class="contact"> Manufacturing</li>
+                        <li class="contact"> Construction</li>
+                        <li class="contact"> All Industries</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-2  pb-5 mt-5">
+                    <h3>Resources</h3>
+                    <ul class="list-unstyled">
+                        <li class="contact"> Blog</li>
+                        <li class="contact"> Videos</li>
+                        <li class="contact"> Support</li>
+                        <li class="contact"> Developers</li>
+                        <li class="contact"> Case Study</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-sm-2  pb-5 mt-5">
+                    <h3>About</h3>
+                    <ul class="list-unstyled">
+                        <li class="contact"> Company</li>
+                        <li class="contact"> Media</li>
+                        <li class="contact"> In The Press</li>
+                        <li class="contact"> Poscast</li>
+                        <li class="contact"> Investor Relations</li>
+                        <li class="contact"> Careers</li>
+                        <li class="contact"> Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- social-icon -->
+        <div class="social-media  ">
+            <div class="social-media-wrap ">
+                <div class="row">
+                    <div class="left-foot col-12 col-sm-8 mt-3">
+                        <ul class="list-unstyled d-flex">
+                            <li class="pr-5">Copyright 2021 Yojee</li>
+                            <li class="pr-5">Privacy Policy</li>
+                            <li class="pr-5">Term and Conditions</li>
+                        </ul>
+                    </div>
+                    <div class="social-icon col-12 col-sm-4 mt-3">
+                        <ul class="list-unstyled d-flex  ">
+                            <li class="pr-2">
+                                <a href="#">
+                                    <img src="./image/Group 442.png" />
+                                </a>
+                            </li>
+                            <li class="pr-2">
+                                <a href="#">
+                                    <img src="./image/Path 3902.png" />
+                                </a>
+                            </li>
+                            <li class="pr-2">
+                                <a href="#">
+                                    <img src="./image/Group 445.png" />
+                                </a>
+                            </li>
+                            <li class="pr-2">
+                                <a href="#">
+                                    <img src="./image/Group 700.png" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+    <!-- Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- icon -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

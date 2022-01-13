@@ -1,0 +1,126 @@
+.do-more-with {
+  // margin-top: 30px;
+  background-image: linear-gradient(
+    268deg,
+    #ae20ab 0%,
+    #bb21ab 17%,
+    #7b1bac 81%,
+    #741aac 100%
+  );
+  background-attachment: fixed;
+
+  &::before {
+    background-image: linear-gradient(
+      268deg,
+      #ae20ab 0%,
+      #bb21ab 17%,
+      #7b1bac 81%,
+      #741aac 100%
+    );
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 98%);
+    bottom: -133vh;
+    content: "";
+    height: 10vw;
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    background-attachment: fixed;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .top-background {
+    padding-top: 10vw;
+  }
+
+  .bottom-background {
+    padding-bottom: 10vw;
+  }
+
+  .doMoreWith {
+    h1 {
+      text-align: center;
+      color: $white;
+      font-weight: $fw8;
+      font-size: 80px;
+      padding-bottom: 20px;
+    }
+    .title {
+      text-align: center;
+      color: $white;
+      font-size: 24px;
+      font-weight: $fw4;
+    }
+    .container {
+      margin: 20px 50px;
+      ul {
+        align-items: center;
+        line-height: 20px;
+        padding: 20px 0;
+        li {
+          text-align: center;
+          .btn {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 10px solid $white;
+            background-color: none;
+            text-align: center;
+            justify-self: center;
+            align-items: center;
+            padding: 120px 0;
+            color: $white;
+            font-size: 30px;
+            font-weight: $fw8;
+            margin-bottom: 20px;
+            line-height: 20px;
+          }
+          p {
+            padding: 20px;
+            line-height: 20px;
+            font-size: 20px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 748px) {
+    &::before {
+      bottom: -183vh;
+    }
+    .doMoreWith {
+      h1 {
+        font-size: 2.8rem;
+      }
+      .title {
+        font-size: 18px;
+      }
+      .amount {
+        .col-12 {
+          .btn {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 8px solid $white;
+            background-color: none;
+            text-align: center;
+            justify-self: center;
+            align-items: center;
+            padding: 50px 0;
+            color: $white;
+            font-size: 20px;
+            font-weight: $fw8;
+            line-height: 40px;
+          }
+          p {
+            margin-bottom: -80px;
+            margin-right: 100px;
+          }
+        }
+      }
+    }
+  }
+}

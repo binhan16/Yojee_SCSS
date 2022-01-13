@@ -1,0 +1,36 @@
+.btn-pink{
+  @include btn(none,$white,$pink,10px,40px);
+  font-size: 18px!important;
+  &:hover{
+    border-bottom:none;
+    transform:scale(1.2)
+  }
+}
+
+.btn-1{
+  @include btn(2px solid $pink,$pink,$white,10px,30px);
+  margin-left: 40px;
+  &:hover{
+    background-color: $pink;
+    color:$white;
+  }
+  
+}
+
+.btn-2{
+  @include btn(2px solid $pink,$pink,$white,10px,30px);
+  &:hover{
+    background-color: $pink;
+    color:$white;
+  }
+}
+
+.btn-find{
+  @include btn(none,$white,$pink,10px,40px);
+  font-size: 18px!important;
+  &:hover{
+    border-bottom:none;
+    transform:scale(1.2)
+  }
+}
+
