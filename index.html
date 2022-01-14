@@ -13,6 +13,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <!-- CSS -->
     <link rel="stylesheet" href="./scss/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <style>
         /* backToTop */
         #myBtn {
@@ -58,56 +60,85 @@
             <!-- Navbar -->
             <div class="collapse navbar-collapse justify-content-around" id="collapsibleNavbar">
                 <ul id="primary-menu" class="navbar-nav d-flex list-unstyled">
-                    <li class="nav-item ours">
-                        <a href="#" class="nav-link ours">
+                    <li class="nav-item ours-items">
+                        <a href="#" class="nav-link ">
                             <span>Our Software</span>
                             <i class="fas fa-chevron-right"></i>
                         </a>
 
                         <!-- sub-menu -->
-                        <ul class="dropdown_menu list-unstyled ">
+                        <ul class="dropdown_menu list-unstyled ours-drop">
+                            <a href="#" class=" back-ours-btn d-none" >
+                                
+                                <i class="fas fa-chevron-left"></i>
+                                <span>Our Software</span>
+                            </a>
                             <li>
-                                <a href="#">Solving Challenges
-                                    <i class="fas fa-chevron-right"></i>
+                                <a href="#">
+                                    <span>Solving Challenges</span>
+                                    
                                 </a>
                             </li>
-                            <li>
-                                <ul class=" submenu">
-                                    <a href="#">View all
+                            <li >
+                                <div class="row submenu list-unstyled ">
+                                    <a class="view" href="#">
+                                        <p>View all</p>
                                         <i class="fas fa-angle-double-right"></i>
-                                        <br>
-                                        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit</span>
                                     </a>
-                                    <li>
-                                        <a href="#">Order Management</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Delivery Route Planning</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Delivery Route Optimization</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Fleet Delivery Tracking</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Automated Customer Update</a>
-                                    </li>
-                                </ul>
+                                    <ul class="menu-1  list-unstyled ml-5 mr-3">
+                                        <li>
+                                            <a href="#">Order Management</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Delivery Route Planning</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Delivery Route Optimization</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fleet Delivery Tracking</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Automated Customer Update</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="menu-2 list-unstyled">
+                                        <li>
+                                            <a href="#">Order Management</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Delivery Route Planning</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Delivery Route Optimization</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fleet Delivery Tracking</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Automated Customer Update</a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                                <a href="#">Features
-                                    <i class="fas fa-chevron-right"></i>
+                                <a class="tag-featured" href="#">
+                                    <span>Features</span>
+                                    
                                 </a>
                             </li>
                             <li>
-                                <a href="#">Pricing</a>
+                                <a href="#">
+                                    <span>Pricing</span>
+                                </a>
                             </li>
                             <li>
-                                <a href="#">API</a>
+                                <a href="#">
+                                    <span>API</span>
+                                </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item industry-items">
                         <a href="#" class="nav-link">
                             <span>Industry</span>
                             <i class="fas fa-chevron-right"></i>

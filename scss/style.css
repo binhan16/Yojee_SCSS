@@ -120,17 +120,44 @@ header .navbar .navbar-nav .nav-item ul.dropdown_menu li a:hover {
   border-bottom: none;
 }
 
-header .navbar .navbar-nav .nav-item ul.dropdown_menu li > ul.submenu {
-  width: 507px;
+header .navbar .navbar-nav .nav-item ul.dropdown_menu li > .submenu {
+  display: none;
+  width: 550px;
   height: 300px;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
   position: absolute;
   overflow: hidden;
-  top: -102px;
-  left: 200px;
-  padding: 45px 0 50px 50px;
+  top: -30px;
+  left: 210px;
   background: #fff;
   margin: 0;
   border-radius: 0;
+  z-index: 1;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+header .navbar .navbar-nav .nav-item ul.dropdown_menu li > .submenu a.view {
+  width: 100%;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+header .navbar .navbar-nav .nav-item ul.dropdown_menu li > .submenu a.view p {
+  float: left;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header .navbar .navbar-nav .nav-item ul.dropdown_menu li > .submenu a.view p:hover {
+  color: #bb21ab;
+}
+
+header .navbar .navbar-nav .nav-item ul.dropdown_menu li > .submenu a.view .fa-angle-double-right:before {
+  padding-right: 400px;
 }
 
 header .navbar .navbar-nav .nav-item:hover > ul.dropdown_menu {
@@ -154,7 +181,8 @@ header .navbar .navbar-nav .nav-item:hover > ul.dropdown_menu {
   header .navbar .navbar-toggler {
     margin-right: 30px;
   }
-  header .navbar .navbar-toggler:focus, header .navbar .navbar-toggler:active, header .navbar .navbar-toggler .navbar-toggler-icon:focus {
+  header .navbar .navbar-toggler:focus, header .navbar .navbar-toggler:active,
+  header .navbar .navbar-toggler .navbar-toggler-icon:focus {
     outline: none;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -187,6 +215,46 @@ header .navbar .navbar-nav .nav-item:hover > ul.dropdown_menu {
     margin: 30px 0;
     float: right;
     font-size: 12px;
+  }
+  header .navbar #primary-menu .nav-item .ours-drop {
+    display: none;
+    width: 100%;
+    height: 74vh;
+    margin-top: -50px;
+    margin-left: 0;
+    background: none;
+  }
+  header .navbar #primary-menu .nav-item .ours-drop a.back-ours-btn {
+    display: block !important;
+    margin: 0px 0;
+    color: #333333;
+    width: 400px;
+    border-bottom: 1px solid #838282;
+    text-decoration: none;
+    padding: 20px 0;
+  }
+  header .navbar #primary-menu .nav-item .ours-drop a.back-ours-btn span {
+    font-weight: 600;
+    font-size: 18px;
+    margin-right: 260px;
+  }
+  header .navbar #primary-menu .nav-item .ours-drop a.back-ours-btn i.fas {
+    margin: 10px 0;
+    float: left;
+    font-size: 12px;
+  }
+  header .navbar #primary-menu .nav-item .ours-drop li a {
+    padding: 20px 0;
+    width: 400px;
+    border-bottom: 1px solid #838282;
+  }
+  header .navbar #primary-menu .nav-item .ours-drop li a span {
+    font-weight: 600;
+    font-size: 18px;
+    float: left;
+  }
+  header .navbar #primary-menu .nav-item .ours-drop .submenu {
+    display: none;
   }
   header .navbar #right-menu {
     -webkit-box-orient: vertical;
@@ -246,7 +314,9 @@ header .navbar .navbar-nav .nav-item:hover > ul.dropdown_menu {
   -webkit-transition: all .3s;
   transition: all .3s;
   margin-top: 10px;
-  margin-left: 40px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .btn-1:hover {
@@ -266,6 +336,10 @@ header .navbar .navbar-nav .nav-item:hover > ul.dropdown_menu {
   -webkit-transition: all .3s;
   transition: all .3s;
   margin-top: 10px;
+  margin-left: 55px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .btn-2:hover {
@@ -350,6 +424,9 @@ header .navbar .navbar-nav .nav-item:hover > ul.dropdown_menu {
   .swf .content .solutions ul.choose .btn-chose {
     width: calc(100% - 40px);
     text-align: center;
+  }
+  .swf .content .solutions ul.choose .btn-2 {
+    margin-left: 0;
   }
 }
 
@@ -521,7 +598,7 @@ header .navbar .navbar-nav .nav-item:hover > ul.dropdown_menu {
   background-image: linear-gradient(268deg, #ae20ab 0%, #bb21ab 17%, #7b1bac 81%, #741aac 100%);
   -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 98%);
           clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 98%);
-  bottom: -133vh;
+  bottom: -130vh;
   content: "";
   height: 10vw;
   width: 100%;
@@ -601,7 +678,7 @@ header .navbar .navbar-nav .nav-item:hover > ul.dropdown_menu {
 
 @media screen and (max-width: 748px) {
   .do-more-with::before {
-    bottom: -183vh;
+    bottom: -187.5vh;
   }
   .do-more-with .doMoreWith h1 {
     font-size: 2.8rem;

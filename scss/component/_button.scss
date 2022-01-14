@@ -9,7 +9,7 @@
 
 .btn-1{
   @include btn(2px solid $pink,$pink,$white,10px,30px);
-  margin-left: 40px;
+  width: max-content;
   &:hover{
     background-color: $pink;
     color:$white;
@@ -19,6 +19,8 @@
 
 .btn-2{
   @include btn(2px solid $pink,$pink,$white,10px,30px);
+  margin-left: 55px;
+  width: max-content;
   &:hover{
     background-color: $pink;
     color:$white;
